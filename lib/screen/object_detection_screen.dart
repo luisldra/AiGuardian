@@ -5,7 +5,6 @@ import 'package:object_detection_app/utils/my_Text_stylr.dart';
 import 'dart:io';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
-import 'package:screenshot/screenshot.dart';
 
 class ObjectDetectionScreen extends StatefulWidget {
   final List<CameraDescription> cameras;

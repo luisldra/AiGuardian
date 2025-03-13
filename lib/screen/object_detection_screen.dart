@@ -23,12 +23,6 @@ class _ObjectDetectionScreenState extends State<ObjectDetectionScreen> {
   late ImageLabeler _imageLabeler;
   bool isDetecting = false;
 
-
- 
-
-
-
-
   @override
   void initState() {
     super.initState();

@@ -5,6 +5,7 @@ import 'package:object_detection_app/utils/my_Text_stylr.dart';
 import 'dart:io';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
+import 'package:screenshot/screenshot.dart';
 
 class ObjectDetectionScreen extends StatefulWidget {
   final List<CameraDescription> cameras;
@@ -21,6 +22,12 @@ class _ObjectDetectionScreenState extends State<ObjectDetectionScreen> {
   String result = "Detecting...";
   late ImageLabeler _imageLabeler;
   bool isDetecting = false;
+
+
+ 
+
+
+
 
   @override
   void initState() {
@@ -120,6 +127,7 @@ class _ObjectDetectionScreenState extends State<ObjectDetectionScreen> {
           style: TextStyle(color: Colors.white, fontSize: 18),
         ),
         centerTitle: true,
+        leading: Image.asset("assets/icons/object.png" , color: Colors.blue,),
       ),
       backgroundColor: Color(0xff3E5879),
 
@@ -175,13 +183,14 @@ class _ObjectDetectionScreenState extends State<ObjectDetectionScreen> {
                       child: Text(
                         result,
                         textAlign: TextAlign.start,
-                        style: TextStyle(fontSize: 16),
+                        style: myTextStyle18(),
                       ),
                     ),
                   ],
                 ),
               ),
             ),
+
           ],
         ),
       ),

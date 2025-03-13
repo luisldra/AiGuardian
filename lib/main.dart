@@ -1,11 +1,18 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:object_detection_app/screen/object_detection_screen.dart';
 import 'package:object_detection_app/screen/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final cameras = await availableCameras();
+
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp ,
+    DeviceOrientation.portraitDown
+  ]) ;
+
   runApp(MyApp(cameras: cameras));
 }
 

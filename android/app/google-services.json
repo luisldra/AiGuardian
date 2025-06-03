@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1040021193323",
+    "project_id": "object-detection-udc",
+    "storage_bucket": "object-detection-udc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040021193323:android:e8c28be20cf0fb5133672e",
+        "android_client_info": {
+          "package_name": "com.example.object_detection_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSLuPyrdsFg2mmmh_NYieAJ_EPCYvkM48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
